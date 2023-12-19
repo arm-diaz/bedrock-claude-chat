@@ -19,7 +19,7 @@ const ALLOWED_IP_V6_ADDRESS_RANGES: string[] = app.node.tryGetContext(
 // https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafv2-webacl.html
 const waf = new FrontendWafStack(app, `FrontendWafStack`, {
   env: {
-    region: "us-east-1",
+    region: "us-west-2",
   },
   allowedIpV4AddressRanges: ALLOWED_IP_V4_ADDRESS_RANGES,
   allowedIpV6AddressRanges: ALLOWED_IP_V6_ADDRESS_RANGES,
